@@ -15,22 +15,22 @@ namespace BusinessLayer.Concrete
             _productDal = productDal;
         }
 
-        void IGenericService<Product>.TDelete(Product t)
+        public void TDelete(Product t)
         {
             _productDal.Delete(t);
         }
 
-        Product IGenericService<Product>.TGetById(int Id)
+        public Product TGetById(int Id)
         {
             return _productDal.GetById(Id);
         }
 
-        List<Product> IGenericService<Product>.TGetList()
+        public List<Product> TGetList()
         {
             return _productDal.GetList();
         }
 
-        void IGenericService<Product>.TInsert(Product t)
+        public void TInsert(Product t)
         {
             //Bunları FluentValidation da oluşturacağız
 
@@ -46,7 +46,7 @@ namespace BusinessLayer.Concrete
             
         }
 
-        void IGenericService<Product>.TUpdate(Product t)
+        public void TUpdate(Product t)
         {
             _productDal.Update(t);
         }

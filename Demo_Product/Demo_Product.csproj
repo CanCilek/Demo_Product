@@ -24,4 +24,12 @@
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Product\" />
+    <None Remove="Views\Partials\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Product\" />
+    <Folder Include="Views\Partials\" />
+  </ItemGroup>
 </Project>
