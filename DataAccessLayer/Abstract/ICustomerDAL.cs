@@ -10,6 +10,7 @@ namespace DataAccessLayer.Abstract
     public interface ICustomerDAL : IGenericDAL<Customer>
     {
 
+        List<Customer> GetCustomerListWithJob();
 
     }
 }
